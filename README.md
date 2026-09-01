@@ -1,5 +1,7 @@
 # AI-Powered Student Complaint Triage Assistant
 
+> 👨‍💻 **Developed & Maintained by [Raza Ullah Khan](https://github.com/RAZAULLAH-KHAN)**
+
 A full-stack, enterprise-grade web application built with **Next.js 14+ (App Router)**, **Google Gemini 2.0 AI**, **Supabase (PostgreSQL & Auth)**, and **Nodemailer**. Designed to automate, classify, prioritize, route, and draft official responses for student grievances while keeping university staff in full control.
 
 ---
@@ -221,6 +223,14 @@ complaint-triage/
     "source": "email"
   }
   ```
+
+---
+
+## 👨‍💻 Developed By
+
+**Raza Ullah Khan**
+- **GitHub Profile**: [@RAZAULLAH-KHAN](https://github.com/RAZAULLAH-KHAN)
+- **Project**: AI-Powered Student Complaint Triage Assistant
 
 ---
 
