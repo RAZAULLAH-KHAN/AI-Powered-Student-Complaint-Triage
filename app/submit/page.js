@@ -274,7 +274,7 @@ export default function StudentPublicSubmitPage() {
         )}
 
         <p className="text-center text-xs text-muted" style={{ marginTop: '24px' }}>
-          University Complaint System / Powered by AI
+          University Student Complaint System
         </p>
       </div>
     </div>
