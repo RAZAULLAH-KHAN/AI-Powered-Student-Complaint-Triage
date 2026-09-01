@@ -1,11 +1,11 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { createClient } from '@/lib/supabase/client';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 
-export default function ComplaintsListPage() {
+function ComplaintsListContent() {
   const [complaints, setComplaints] = useState([]);
   const [loading, setLoading] = useState(true);
   const [categories, setCategories] = useState([]);
@@ -291,5 +291,18 @@ export default function ComplaintsListPage() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function ComplaintsListPage() {
+  return (
+    <Suspense fallback={
+      <div className="loading-page" style={{ minHeight: '260px' }}>
+        <div className="spinner spinner-lg"></div>
+        <div className="loading-text">Loading case records...</div>
+      </div>
+    }>
+      <ComplaintsListContent />
+    </Suspense>
   );
 }
